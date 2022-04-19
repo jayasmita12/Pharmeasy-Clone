@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/styles/cart.css">  
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+<div id="navbaradd">
+
+</div>
+    <h1 style="margin-bottom: -5px;">Cart Page</h1>
+    <hr><br><br>
+    <div id="displayCart">
+        <div id="cartitemdiv">
+
+        </div>
+        <div id="billingDetails">
+            <h1>Billing Details</h1>
+            <span>Cart Item :- </span><span id="cartlengthspan">"Item"</span><br><br>
+            <span>Total Amount :-  </span><span id="cartAmountspan">""</span><br><br><br><br>
+            <button id="checkbtn">Checkout</button>
+        </div>
+    </div>
+    <div id="indexfooter">
+
+    </div>
+</body>
+
+</html>
+<script src="/scripts/cart.js"></script>
+<script type="module">
+
+    import navbar from "/scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>
+<script type="module">
+    import footer from "/scripts/footer.js";
+    // console.log(footer)
+    let indexfooter_div = document.querySelector("#indexfooter");
+    indexfooter_div.innerHTML = footer();
+  </script>

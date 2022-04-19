@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  background-color: rgb(244, 247, 251);
+}
+
+#upper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.head {
+  font-size: 20px;
+  color: rgb(90, 88, 88);
+  font-weight: bold;
+}
+
+#upper > div > p {
+  color: rgb(102, 95, 95);
+  font-weight: 500;
+}
+
+#imgdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#line444 {
+  width: 240px;
+}
+
+#line444 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#imgdiv {
+  display: flex;
+  justify-content: space-between;
+}
+#lower {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+#lowerimgdiv > img {
+  width: 55px;
+  height: 35px;
+}
+#imgline {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  justify-content: space-between;
+  color: rgb(102, 95, 95);
+  align-items: center;
+}
+
+#detailsofthree {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 60px;
+  justify-content: center;
+  padding-top: 60px;
+  color: rgb(143, 134, 134);
+  line-height: 19px;
+  font-size: 18px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid rgba(184, 179, 179, 0.5);
+}
+
+#appdetails {
+  padding: 60px 80px;
+  display: flex;
+  gap: 100px;
+}
+#appdetails h2 {
+  color: rgb(116, 105, 105);
+}
+
+#links img {
+  width: 150px;
+  height: 60px;
+}

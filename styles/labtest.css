@@ -1,0 +1,187 @@
+ #container {
+        width: 1024px;
+        height: 2400.84px;
+        /* border: 1px solid black; */
+        margin: auto;
+
+    }
+    #img {
+        width: 1024px;
+        height: 301.06px;
+        /* border: 1px solid black; */
+    }
+    #box1 {
+        width: 1024px;
+        height: 319.33px;
+        /* border: 1px solid grey; */
+    }
+    #round {
+        width: 1024px;
+        height: 80px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    #curve {
+        width: 240px;
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    #img1 {
+        width: 1024px;
+        height: 149.5px;
+        /* border: 1px solid green; */
+        
+    }
+    #bar {
+        width: 1024px;
+        height: 64.83px;
+        /* border: 1px solid rgb(122, 44, 196); */
+        background-color:rgb(122, 44, 196) ;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: flex;
+        gap:20px
+    }
+    #plus {
+        width:60px;
+        height:44.83px;
+        /* border: 1px solid black;  */
+        margin-top: 10px; 
+         
+    }
+    #box2 {
+        width: 1024px;
+        height: 234px;
+        /* border: 1px solid brown; */
+    }
+    #box3 {
+        width: 1024px;
+        height: 211px;
+        /* border: 1px solid rgb(122, 44, 196); */
+    }
+    #box4 {
+        width: 1024px;
+        height: 240.38px;
+        /* border: 1px solid red; */
+        
+        
+    }
+    #bo4 {
+        width: 264px;
+        height: 194px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 20px;
+    
+    }
+    #line3 {
+        width: 1024px;
+        height: 20px;
+        /* border: 1px solid black; */
+    }
+    #line1 {
+        width: 1024px;
+        height: 20px;
+        /* border: 1px solid black; */
+    }
+    #square {
+        width: 264px;
+        height: 194px;
+        border: 1px solid black;
+        /* margin-top: 14px; */
+        border-radius: 5px;
+    }
+    #line2 {
+        width: 1024px;
+        height: 20px;
+        /* border: 1px solid black; */
+    }
+    #square2 {
+        width: 1024px;
+        height: 171px;
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 15px;
+    }
+    #sqr1 {
+        width: 264px;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+    #passage {
+        width: 1024px;
+        height: 1100px;
+        /* border: 1px solid blue; */
+    }
+    #b1 {
+        width: 1024px;
+        height: 63px;
+        /* border: 1px solid black;  */
+        line-height: 5px;
+    }
+    #b2 {
+        width: 1024px;
+        height: 111px;
+        /* border: 1px solid black;  */
+        line-height: 19px;
+        
+    }#b3 {
+        width: 1024px;
+        height: 72px;
+        /* border: 1px solid black;  */
+    }
+    #b4 {
+        width: 1024px;
+        height: 135px;
+        /* border: 1px solid black;  */
+        line-height: 19px;
+    }
+    #b5 {
+        width: 1024px;
+        height: 63px;
+        /* border: 1px solid black; */
+        line-height: 10px;
+    }
+    #b6 {
+        width: 1024px;
+        height: 74px;
+        /* border: 1px solid black; */
+        line-height: 6px;
+    }
+    #b7 {
+        width: 1024px;
+        height: 135px;
+        /* border: 1px solid black; */
+        line-height: 18px;
+    }
+    #b8 {
+        width: 1024px;
+        height: 63px;
+        /* border: 1px solid black; */
+        line-height: 15px;
+    }
+    #b9 {
+        width: 1024px;
+        height: 148px;
+        /* border: 1px solid black; */
+        line-height: 8px;
+    }
+    #b10 {
+        width: 1024px;
+        height: 48px;
+        /* border: 1px solid black; */
+        line-height: 18px;
+    }
+    #bx {
+        width: 1024px;
+        height: 194px;
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 10px;
+    }

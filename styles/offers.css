@@ -1,0 +1,11 @@
+main {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 7%;
+}
+#path {
+  padding: 0 11%;
+  margin: 0;
+}
+#path > a {
+  text-decoration: none;
+}

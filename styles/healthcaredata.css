@@ -1,0 +1,46 @@
+ #container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+
+        #container>div {
+            border: 1px solid rgba(138, 133, 133, .3);
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 28%);
+            justify-content: space-between;
+            border-radius: 8px;
+        }
+
+        #container>div:hover {
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-size: 18px;
+        }
+
+
+
+
+        /* ------------------------------------- */
+
+
+
+        #containertext {
+            padding: 20px 80px;
+        }
+
+        #containertext h3 {
+            color: rgb(85, 82, 82);
+        }
+
+        #containertext p,
+        li {
+            color: rgb(124, 119, 119);
+        }

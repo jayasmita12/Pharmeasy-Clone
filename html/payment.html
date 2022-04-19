@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="/styles/payment.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+
+</head>
+
+<body>
+    <div id="navbaradd"></div>
+    <div id="container">
+        <h1 style="margin:20px 0px -5px 50px;">Payment</h1>
+        <hr>
+
+    </div>
+        <div>
+            <div id="pay">
+                <div class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/icon-payment-visa.svg" />
+                    <br>
+                    <h4>VISA</h4>
+
+                </div>
+                <div id="master" class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/icon-payment-mastercard.svg" />
+                    <br>
+                    <h4>MASTER CARD</h4>
+                </div>
+
+                <div class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/ru-pay.svg" />
+                    <br>
+                    <h4>RUPAY</h4>
+                </div>
+                <div class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/net-banking.svg" />
+                    <br>
+                    <h4>NET BANKING</h4>
+                </div>
+                <div class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/upi.svg" />
+                    <br>
+                    <h4>UNIFIED PAYMENT INTERFARCE</h4>
+                </div>
+                <div class="box">
+                    <img src="https://static.zara.net/static/images/payment/payment/co-djpen.svg" />
+                    <br>
+                    <h4 id="otag">CASH ON DELIVERY</h4>
+                </div>
+            </div>
+            <div id="paybox">
+                <button id="continuebtn"  >Continue</button>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    document.getElementById("continuebtn").addEventListener("click", btnfunction);
+     function btnfunction() {
+        alert("Please Choose your Card")
+     }
+
+    document.querySelector("#master").addEventListener("click", changebg);
+
+    function changebg(event) {
+        let div = document.getElementById("master")
+       
+        div.style="background-color:green;color:white"
+       
+        setTimeout(function(){
+        alert("Thanks for Choosing & plzz complete further steps")
+        window.location.href="/html/carddetails.html"
+        },1000)
+    }
+</script>
+<script type="module">
+
+    import navbar from "/scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

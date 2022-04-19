@@ -1,0 +1,290 @@
+#view {
+  height: 250px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.re_view {
+  padding: 10px;
+}
+.number {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.comment {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+#break {
+  width: 100%;
+  height: 2200px;
+}
+
+/* footer */
+#parentfooter {
+  max-width: 70%;
+  margin: auto;
+}
+
+.frame {
+  margin: auto;
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  padding: 5px;
+  grid-template:
+    "a c d f"
+    "b c e f";
+}
+
+.block1 {
+  grid-area: a;
+}
+.block2 {
+  grid-area: b;
+}
+.block3 {
+  grid-area: c;
+}
+.block4 {
+  grid-area: d;
+}
+.block5 {
+  grid-area: e;
+}
+.block6 {
+  grid-area: f;
+}
+.block7 {
+  width: 100%;
+}
+
+.block7 img {
+  max-width: 35px;
+  height: 25px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.block7 span {
+  float: left;
+}
+
+.block6 img {
+  max-width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.frame {
+  margin-top: 40px;
+}
+
+.block7 {
+  margin-top: 40px;
+}
+
+.frame div,
+span {
+  margin-top: 10px;
+  font-family: Open Sans, sans-serif !important;
+  font-size: 15px;
+  color: #4f585e;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+.hedding {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+  text-align: left;
+  color: #4f585e !important;
+}
+.block7 .hedding,
+.block7 img {
+  margin-top: 10px;
+}
+.companyDescription p,
+.topSellingProducts p {
+  font-size: 12px;
+  display: inline-block;
+  color: #4f585e;
+  font-weight: 500;
+}
+
+.paraHeadding,
+.topSellingProducts span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0px;
+  color: #4f585e;
+}
+.descriptionHeading {
+  font-size: 15px;
+  color: #4f585e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.h1 {
+  font-size: 26px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  color: #4f585e;
+  padding-bottom: 15px;
+  line-height: 1.8;
+  margin-top: 20px;
+  font-family: Open Sans, sans-serif !important;
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f585e;
+  padding-bottom: 15px;
+  line-height: 1.8;
+  font-family: Open Sans, sans-serif !important;
+}
+
+/*Moblie APP */
+
+.downlodeApp {
+  height: 450px;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  display: flex;
+}
+
+.img1 img,
+.img2 img {
+  width: 150px;
+  height: 50px;
+}
+
+.imagePhone img {
+  width: 200px;
+  height: 400px;
+}
+.playStore {
+  margin-top: 40px;
+  min-width: 325px;
+  margin-left: -200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Dname {
+  color: #4f585e;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+.Cfeatures {
+  margin-top: 250px;
+  margin-left: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto;
+  margin-right: 150px;
+}
+
+.f1 p,
+.f2 p,
+.f3 p {
+  color: #4f585e;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.f1 p:last-child,
+.f2 p:last-child,
+.f3 p:last-child {
+  font-family: Open Sans, sans-serif !important;
+  font-size: 12px;
+  color: #8897a2;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.f1 img .f2 img,
+.f3 img {
+  height: 50px;
+  width: 50px;
+}
+/* footer */
+
+#productgrid {
+  max-width: 70%;
+  height: 800px;
+  margin-top: -500px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 400px;
+}
+
+#productgrid div {
+  border: 0.5px solid lightgrey;
+  width: 200px;
+  height: 350px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+#productgrid p {
+  margin: 0;
+  line-height: 1.5;
+  height: 3em;
+  overflow: hidden;
+  text-transform: capitalize;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-weight: 700;
+  color: #4f585e;
+}
+
+#highttolow,
+#lowtohigt {
+  width: 150px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: -8px;
+}
+
+#sumitbtn {
+  width: 100px;
+  height: 30px;
+}
+
+#searchbar {
+  margin-left: 30px;
+  height: 40px;
+  width: 200px;
+  border: 3px solid teal;
+  border-radius: 5px;
+}
+
+#brandFilter,
+#priceFilter {
+  margin-left: 80px;
+  margin-bottom: 8px;
+}
+
+#topview span {
+  color: teal;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 100px;
+}
