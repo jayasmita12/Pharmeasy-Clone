@@ -36,7 +36,7 @@ We used the following resources:
 
 3.https://mdn.com
 
-4.https://pharmeasyapinodejs.herokuapp.com/covids
+4.https://pharmeasy-clone.herokuapp.com/covids
 
 We tried our best to create perfect cloned site, at first we decided to complete the user flow of the project that is user should see home page of the website,user should be able to signup and signin and user should be able to access the contents after completing the payment process.
 
@@ -62,7 +62,7 @@ After crossing each and every obstacles, we finally completed the cloning of the
 
 Github link: https://github.com/bharathk07/PHARMEASY-CLONE.git
 
-Netlify :https://pharmeasy-clone.netlify.app/
+Netlify :https://pharmeasy-app.netlify.app/
 
 Medium:https://medium.com/@bharathkswamy07/cloning-of-pharmeasy-website-3bf20025c70
 
