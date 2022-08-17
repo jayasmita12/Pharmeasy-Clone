@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page`</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+
+<body>
+    <!-- <div id="navbaradd"></div> -->
+    <div id="container">
+
+        <header class='errorBox'>
+            <div class="error">
+                <p>
+                    <i class='fas fa-exclamation-triangle' style='font-size:25px;color:#c40000'></i>
+                </p>
+
+                <span>
+                    <h4>There was a problem</h4>
+                    <ul class='errorList'>
+                        <li class='nameErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span
+                                class='list'>Enter your Name</span></li>
+                        <li class='emailErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span
+                                class='list'>Enter your email</span></li>
+                        <li class='passErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span
+                                class='list'>Enter your password</span></li>
+                        <li class='passShortErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span
+                                class='list'>Password is too short</span></li>
+                        <li class='rePassErr'><i class="fa fa-circle" style="font-size:5px; color:black;"></i><span
+                                class='list'>Password must match</span></li>
+                    </ul>
+                </span>
+            </div>
+        </header>
+
+        <!-- Signup Box -->
+
+
+
+
+        <div class="signInBox">
+            <h1>Create account</h1>
+            <form>
+
+
+                <!-- <div class="input email"> -->
+                    <label for="name" class='inputText'>Your name</label>
+                    <input type="text" name="email" class='data' id="name">
+                <!-- </div> -->
+                <!-- <div class="input email"> -->
+                    <label for="email" class='inputText'>Email or mobile phone number</label>
+                    <input type="email" name="email" class='data' id="email">
+                <!-- </div> -->
+
+                <!-- <div class="input password"> -->
+                    <!-- <div class="passLabel"> -->
+                        <label for="password" class='inputText'>Password</label>
+                    <!-- </div> -->
+                    <input type="password" name="password" class='data' id="password"
+                        placeholder="At least 6 charcters">
+                <!-- </div> -->
+                <p class='warn'> <span><i>i</i></span> passwords must be At least 6 characters</p>
+
+                <!-- <div class="input password"> -->
+                    <!-- <div class="passLabel"> -->
+                        <label for="password" class='inputText'>Re-enter Password</label>
+                    <!-- </div> -->
+                    <input type="password" name="password" class='data' id="reEnterPass">
+                <!-- </div> -->
+            </form>
+            <div class="btn">
+                <!-- <button type='submit' class='signInBtn createAccBtn' onclick="submit()">Create your account</button> -->
+                <button type='submit' class='signInBtn createAccBtn' onclick="Register()">Create your account</button>
+            </div>
+
+            <div class="terms">
+                <p>
+                    By creating an account, you agree to PharmEasy
+
+                    and
+
+                </p>
+            </div>
+
+            <div class="keepSignIn">
+                <label>Already have an account
+                    <a onclick="signinPage()" href="./signin.html">Sign-In</a><i class="fas fa-caret-right"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="terms">
+                <p><a href="#">Conditions of Use</a></p>
+                <p><a href="#">Privacy Notes</a></p>
+                <p><a href="#">Help</a></p>
+            </div>
+            <div class="copyright">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="../scripts/signup.js"></script>
+<!-- <script type="module">
+
+    import navbar from "/scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script> -->

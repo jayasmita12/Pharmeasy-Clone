@@ -1,0 +1,51 @@
+#card{
+    width: 520px;
+    height: 420px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #37857e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#inputdata>label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#inputdata>input{
+    font-size: 17px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 7px;
+}
+#internal{
+    display: flex;
+    margin-left: 10px;
+}
+#internal>input{
+    width: 100px;
+    border-radius: 7px;
+}
+#internal>label{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 10px 0px 20px;
+}
+#continueofcard{
+    padding: 15px 30px;
+    background-color: #111111;
+    margin-left: 370px;
+    margin-top: 30px;
+    border: 0px;
+    border-radius: 7px;
+    color:white
+}
+button:hover{
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: #464242;
+}
+#master{
+    padding-left: 25px;
+}

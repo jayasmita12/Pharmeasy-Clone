@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+}
+.carousel-indicators li {
+  border-radius: 14px;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(102, 102, 102);
+  opacity: 0.7;
+}
+.carousel-indicators li:hover {
+  cursor: pointer;
+}
+.Offers section {
+  height: 220px;
+  width: 98%;
+  justify-content: left;
+  overflow-x: auto;
+}
+.Offers section div {
+  height: 160px;
+  display: flex;
+  min-width: 380px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 15px 5px 0px 20px;
+  transition: 0.5s;
+}
+.Offers section div img {
+  width: 40%;
+  height: 40%;
+  margin: 10%;
+  border-radius: 3px;
+}
+.Offers #text {
+  text-align: left;
+  display: block;
+  margin-top: 5%;
+}
+.Controller {
+  position: absolute;
+  font-size: 30px;
+  color: seagreen;
+  cursor: pointer;
+  left: 91%;
+  z-index: 1;
+}
+.Controller:nth-of-type(2) {
+  left: 94%;
+  text-align: right;
+}
+section {
+  width: 98%;
+  height: 180px;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+section::-webkit-scrollbar {
+  visibility: hidden;
+}
+.L {
+  border: 3px solid #dfe3e6;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+/* featured brand starts */
+.featured section {
+  height: 310px;
+  width: 98%;
+  justify-content: left;
+  overflow-x: auto;
+}
+.featured section div {
+  height: 270px;
+  display: flex;
+  min-width: 170px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 15px 5px 0px 20px;
+  transition: 0.5s;
+  border-radius: 5%;
+}
+.featured section div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+#plus_member {
+  min-height: 150px;
+  max-height: 280px;
+}
+#plus_mem {
+  background-color: #a291fa;
+  margin-top: 5%;
+  background-image: url(https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg);
+  display: flex;
+  min-height: 94px;
+  border-radius: 6px;
+}
+.plus_img img {
+  min-width: 94px;
+  height: 94px;
+  flex: 1;
+  padding: 25px 30px 0;
+}
+.plus_text {
+  flex: 3;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin: auto;
+  padding-top: 5px;
+  padding-right: 25px;
+}
+.plus_img2 img {
+  width: 250px;
+  height: 136px;
+  position: absolute;
+  margin: -40px 0 0 0;
+  right: 5px;
+}
+#lab_test img {
+  width: 100%;
+  height: 100px;
+  align-self: center;
+}
+/* deals starts */
+.deals section {
+  height: 310px;
+  width: 98%;
+  justify-content: left;
+  overflow-x: auto;
+  background-color: #fff2f2;
+}
+#demo {
+  border-left: 3px solid #f76b6d;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 20px;
+}
+.deals section div {
+  height: 270px;
+  display: flex;
+  min-width: 270px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 15px 5px 0px 20px;
+  transition: 0.5s;
+  border-radius: 5%;
+}
+.deals section div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+/* deals ends */
+/* delivery start here */
+#delivery {
+  display: flex;
+  height: 360px;
+  padding-right: 10px;
+}
+#delivery a {
+  text-decoration: none;
+  color: black;
+}
+#delivery div {
+  width: 25%;
+  margin: 25px;
+}
+#delivery img {
+  height: 110px;
+}
+/* review starts  */
+.review section {
+  height: 310px;
+  width: 98%;
+  justify-content: left;
+  overflow-x: auto;
+}
+.review section div {
+  height: 270px;
+  background: #f2fff8;
+  display: flex;
+  min-width: 270px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 15px 5px 0px 20px;
+  transition: 0.5s;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        h1 {
+            margin-left: 100px;
+            border-bottom: 1px solid rgba(187, 178, 178, .4);
+        }
+
+        #container {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #container>div {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px, 60px 20px 50px;
+            border-radius: 8px;
+        }
+
+        #container img {
+            width: 90%;
+            height: 200px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px 10px;
+            margin-left: 65px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: teal;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(13, 241, 13);
+        }
+
+        #name_div {
+            display: flex;
+        }
+
+        #name_div #cartbutton {
+            margin-left: 850px;
+            position: fixed;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbaradd"></div>
+    <div id="name_div">
+        <h1>Healthcare Devices</h1>
+        <a href="./cart.html"><button id="cartbutton">Cart</button></a>
+    </div>
+
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    // Healthcare_Devices_data = [
+
+    //     {
+    //         image: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F000665%2Faccu-chek-active-glucometer-test-strips-box-of-50-1-1643883100.jpg&w=256&q=75",
+    //         title: "Accu-Chek Active Glucometer Test Strips Box Of 50",
+    //         price: "975",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1643881668.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Dr Morepen Gluco One Bg 03 Glucometer Test Strips Box Of 50",
+    //         price: "509",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/V62842/liveasy-essentials-all-in-one-vaporizer-2-1643876640.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Essentials All In One Vaporizer",
+    //         price: "399",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I06487/dr-morepen-bg-03-glucometer-test-strips-box-of-25-1-1643882516.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Dr Morepen Bg 03 Glucometer Test Strips Box Of 25",
+    //         price: "359",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/274946/contour-plus-glucometer-test-strips-box-of-50-1-1643882996.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Contour Plus Glucometer Test Strips Box Of 50",
+    //         price: "806",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/V46471/one-touch-select-plus-glucometer-test-strips-box-of-25-2-1644225777.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Onetouch Select Plus Test Strip 25s Pack",
+    //         price: "593",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/Z36722/beurer-ft-09-1-clinical-thermometer-2-1643876366.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beurer Ft 09/1 Clinical Thermometer",
+    //         price: "157",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/Y53636/liveasy-essentials-pill-box-2-1643876564.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Essentials Pill Box",
+    //         price: "211",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-2-1643879897.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Bpl Smart Oxy Finger Tip Pulse Black Oximeter (Black)",
+    //         price: "1017",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I34090/dr-morepen-bp-one-bp-02-bp-monitor-2-1643880521.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Dr Morepen Bp One Bp 02 Bp Monitor",
+    //         price: "989",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/G92287/pharmeasy-orthopaedic-electric-heat-belt-extra-large-2-1641793366.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Pharmeasy Orthopaedic Electric Heat Belt - Extra Large",
+    //         price: "747",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/F60126/liveasy-essentials-respirometer-spirometer-lung-exerciser-2-1645456738.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Essentials Respirometer / Spirometer - Lung Exerciser",
+    //         price: "239",
+    //     },
+
+
+    // ]
+
+
+    let url = "https://pharmeasyapinodejs.herokuapp.com/HealthcareDevices";
+    async function fetchapi() {
+        try {
+            let res = await fetch(url)
+            let data = await res.json();
+            console.log("data:",data)
+              displayhealthcaredeviceitems(data)
+        }
+        catch (err) {
+            console.log("err:", err)
+        }
+    }
+    fetchapi()
+
+
+    // mycartarr = JSON.parse(localStorage.getItem("CART")) || [];
+    // displayhealthcaredeviceitems()
+
+    // function displayhealthcaredeviceitems() {
+
+    //     Healthcare_Devices_data.map(function (el) {
+
+    //         let maindiv = document.createElement("div");
+
+    //         let imgdiv = document.createElement("img");
+    //         imgdiv.src = el.image;
+
+    //         let titlediv = document.createElement("p");
+    //         titlediv.textContent = el.title
+
+    //         let price = document.createElement("p");
+    //         price.textContent = `₹ ${el.price}`;
+
+    //         let btn = document.createElement("button");
+    //         btn.textContent = "Add Cart";
+    //         btn.addEventListener("click", function () {
+    //             addbtn(el)
+    //         })
+
+    //         maindiv.append(imgdiv, titlediv, price, btn);
+    //         document.querySelector("#container").append(maindiv);
+
+    //     })
+
+    // }
+
+    // function addbtn(el) {
+
+    //     console.log(el);
+    //     mycartarr.push(el)
+    //     localStorage.setItem("CART", JSON.stringify(mycartarr));
+    //     alert("added in Cart");
+    //     displayhealthcaredeviceitems();
+
+    // }
+
+    let mycartarr = JSON.parse(localStorage.getItem("CART")) || [];
+     displayhealthcaredeviceitems()
+
+
+    function displayhealthcaredeviceitems(data) {
+            // console.log(data)
+      data.map(function (el) {
+
+            let maindiv = document.createElement("div");
+
+            let imgdiv = document.createElement("img");
+            imgdiv.src = el.image;
+
+            let titlediv = document.createElement("p");
+            titlediv.textContent = el.title
+
+            let price = document.createElement("p");
+            price.textContent = `₹ ${el.price}`;
+
+            let btn = document.createElement("button");
+            btn.textContent = "Add Cart";
+            btn.addEventListener("click", function () {
+                addbtn(el)
+            })
+
+            maindiv.append(imgdiv, titlediv, price, btn);
+            document.querySelector("#container").append(maindiv);
+
+        })
+
+
+
+    }
+
+    function addbtn(el) {
+
+        // console.log(el);
+        mycartarr.push(el)
+        localStorage.setItem("CART", JSON.stringify(mycartarr));
+        alert("added in Cart");
+        displayhealthcaredeviceitems();
+
+    }
+
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

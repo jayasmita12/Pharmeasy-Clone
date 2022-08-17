@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/address.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        #container {
+            /* border: 1px solid gray; */
+            margin: auto;
+            margin-top: 50px;
+            width: 900px;
+            height: 500px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: #37857e;
+
+        }
+
+        #address {
+            border-bottom: 1px solid gray;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            margin: auto;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbaradd">
+
+    </div>
+    <div id="container">
+
+
+
+
+        <div id="address">
+            <h1>Address</h1>
+        </div>
+        <form action="">
+            <div id="maindiv">
+                <div id="leftdiv">
+                    <label for="">Name*</label><br>
+                    <input type="text" id="name"><br><br>
+                    <label for="">Email*</label><br>
+                    <input type="email" name="" id="email"><br><br>
+                    <label for="">Mobile*</label><br>
+                    <input type="number" id="number"><br><br>
+                    <label for="">City*</label><br>
+                    <select name="" id="select">
+                        <option value="">Select City</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Hyderabad</option>
+                        <option value="">Bangalore</option>
+                        <option value="">Delhi</option>
+                        <option value="">Noida</option>
+                        <option value="">Gurugram</option>
+                        <option value="">Pune</option>
+
+                    </select>
+                </div>
+                <div id="rightdiv">
+                    <label for="">Address*</label><br>
+                    <input type="text" name="" id="useraddress"><br><br>
+                    <label for="">pincode*</label><br>
+                    <input type="number" id="pincode"><br><br>
+                    <label for="">Landmark*</label><br>
+                    <input type="text" id="landmark"><br><br>
+                    <label for="">Alternate Number</label><br>
+                    <input type="number" id="altnumber"><br><br>
+
+                </div>
+            </div>
+            <button id="paymentbutton">Move to Payment</button>
+        </form>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click", addbtnfun);
+
+    function addbtnfun(e) {
+        event.preventDefault()
+        let name = document.getElementById("name").value
+        let email = document.getElementById("email").value
+        let mobileno = document.getElementById("number").value
+        let city = document.getElementById("select")
+        let address = document.getElementById("useraddress").value
+        let pincode = document.getElementById("pincode").value
+        let landmark = document.getElementById("landmark").value
+        // let altnumber = document.getElementById("altnumber").value
+
+        function addressdetails(name, email, mobileno, city, address, pincode, landmark, altnumber) {
+            this.name = name,
+                this.email = email,
+                this.mobileno = mobileno,
+                this.city = city,
+                this.address = address,
+                this.pincode = pincode,
+                this.landmark = landmark,
+                this.altnumber = altnumber
+        }
+
+        if (email != "" && name != "" && mobileno != "" && city != "" && address != "" && pincode != "" && landmark != "" && altnumber != "") {
+            if (mobileno.length == 10) {
+                alert("Your address details are filled Successfully")
+                window.location.href = "./payment.html"
+            }
+            else {
+                let completeaddress = new addressdetails(name, email, mobileno, city, address, pincode, landmark, altnumber)
+                alert("Mobile Number must be 10 digits")
+            }
+
+        }
+        else {
+            alert("Fill all the details must be required")
+        }
+    }
+
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

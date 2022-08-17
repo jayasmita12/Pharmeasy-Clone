@@ -1,0 +1,70 @@
+#maindiv {
+    width: 95%;
+    height: 100%;
+     /* border: 1px solid teal;  */
+    margin-left: 40px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    
+}
+
+#leftdiv {
+    width: 35%;
+    height: 100%;
+}
+
+#rightdiv {
+    width: 35%;
+    height: 100%;
+}
+
+#maindiv>div>label {
+    font-size: 16px;
+    font-weight: 500;
+    color:white
+}
+
+#maindiv>div>input {
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 7px;
+   
+}
+
+/* button {
+    margin:auto;
+    margin-left: 370px;
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #111111;
+    color:white;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+} */
+
+select {
+    width: 240px;
+    font-size: 17px;
+    padding: 5px 10px;
+     border-radius: 7px; 
+}
+#paymentbutton{
+    margin:auto;
+    margin-left: 370px;
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #111111;
+    color:white;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}

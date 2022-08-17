@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTPCR</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/RTPCR.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+
+<body>
+    <div id="navbaradd">
+
+    </div>
+    <div id="container">
+        <div id="box1">
+            <div id="test"><h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Test Details</h2>
+                </div>
+            <div id="covid">
+                <div id="cov">
+                <image style="margin-top: 25px; width:40px; height:40px; margin-left: 10px;" src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg"></image>
+            </div>
+            <div id="cov1">
+                <h1>Covid-19 RTPCR (Coronavirus SARS-CoV2)</h1>
+                <p>Available at Thyrocare (Covid RTPCR)</p>
+                <h1>₹700</h1>
+                <button id="rtpcrselect"><h3>Select</h3> </button>
+            </div>
+            </div>
+            <br>
+            <div id="description">
+                <a href="Description" style="font-size:20px; color: teal;">Description</a>
+                <p style="font-size:20px; color: rgb(59, 59, 59);  ">The COVID-19 laboratory test can detect positive coronavirus cases. Any individual with symptoms like cough, high fever, shortness of breath, respiratory and breathing difficulties, and with a history of international travel or contact with Covid -19 positive cases, can book this test with prior consultation by General Physician. The result of this test will be informed to the relevant authorities as mandated by the government. Home sample collection will be done by an expert technician.</p>
+            </div>
+        </div>
+        <div id="box2">
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Please select a test to proceed</p>
+            <button class="viewbtn">View Cart</button>
+        </div>
+    </div><br>
+    <div id="cont">
+        <div id="bar">
+            <div id="pic">
+                <image style="margin-top:17px" src="https://assets.pharmeasy.in/web-assets/dist/9407515b.svg?dim=0x72&dpr=1.5&q=100"></image>
+            </div>
+            <div id="tex" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Trusted Labs</div><br>
+            <div id="para">
+                <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: grey;">Every test booked via PharmEasy is conducted by certified labs that are 100% verified and trustworthy.</p>
+            </div>
+        </div>
+        <div id="bar">
+            <div id="pic">
+                <image style="margin-top:17px" src="https://assets.pharmeasy.in/web-assets/dist/0105ddc1.svg?dim=0x72&dpr=1.5&q=100"></image>
+            </div>
+            <div id="tex" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Home Visit</div><br>
+            <div id="para">
+                <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: grey;">With PharmEasy, you get a FREE sample pick-up* by professional phlebotomists from your home or preferred location.</p>
+            </div>
+        </div>
+        <div id="bar">
+            <div id="pic">
+                <image style="margin-top:17px" src="https://assets.pharmeasy.in/web-assets/dist/fc71c500.svg?dim=0x72&dpr=1.5&q=100"></image>
+            </div>
+            <div id="tex" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Timely and Accurate Reports</div><br>
+            <div id="para">
+                <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: grey;">Once collected, samples will be sent to labs for processing. Detailed reports will be shared within a stipulated timeline.</p>
+            </div>
+        </div>
+        <div id="bar">
+            <div id="pic">
+                <image style="margin-top:17px" src="https://assets.pharmeasy.in/web-assets/dist/4a11ac5a.svg?dim=0x72&dpr=1.5&q=100"></image>
+            </div>
+            <div id="tex" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Up to 70% OFF</div><br>
+            <div id="para">
+                <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: grey;">At PharmEasy, you save at every step! On diagnostic tests, get up to 70% OFF on various tests and test packages.</p>
+            </div>
+        </div>
+    </div>
+    <div id="RTPCRfooter">
+
+    </div>
+</body>
+</html>
+<script type="module">
+
+    import footer from "./scripts/footer.js";
+    console.log(footer)
+    let RTPCRfooter_div = document.querySelector("#RTPCRfooter");
+    RTPCRfooter_div.innerHTML = footer();
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

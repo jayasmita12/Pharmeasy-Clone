@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <style>
+        h1 {
+            /* margin-left: 100px; */
+            border-bottom: 1px solid rgba(187, 178, 178, .4);
+        }
+
+        #container {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #container>div {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px, 60px 20px 50px;
+            border-radius: 8px;
+        }
+
+        #container img {
+            width: 90%;
+            height: 200px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px 10px;
+            margin-left: 65px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: teal;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(13, 241, 13);
+        }
+
+         #name_div{
+            display: flex;
+        }
+        #name_div #cartbutton{
+            margin-left: 860px;
+            position: fixed;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>\
+    <div id="navbaradd"></div>
+    <div id="name_div">
+        <h1>Health Food and Drinks</h1>
+        <a href="./cart.html"><button id="cartbutton">Cart</button></a>
+    </div>
+
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    // let Health_Food_and_Drinks = [
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/E54755/everherb-aloe-vera-juice-with-pulp-rejuvenates-skin-hair-1-litre-bottle-2-1643882394.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Everherb Aloe Vera Juice With Pulp - Rejuvenates Skin & Hair - 1 Litre Bottle",
+    //         price: "199",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/X86381/beyondarie-wild-litsea-herbal-tea-100-g-tin-2-1641794768.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild Litsea Herbal Tea - 100 G Tin",
+    //         price: "419",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/Q22665/upakarma-ayurveda-pure-shilajit-tea-with-12-plus-ayurvedic-herbs-pack-of-20-sachets-2-1641790320.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Upakarma Ayurveda Pure Shilajit Tea With 12 Plus Ayurvedic Herbs -Pack Of 20 Sachets",
+    //         price: "309",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/M93204/beyondarie-wild-white-tea-50-g-tin-2-1641794314.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild White Tea - 50 G Tin",
+    //         price: "419",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C66326/spice-sip-immunity-boosting-herbal-tea-pack-of-6-6-x-12-g-2-1641795171.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Spice Sip Immunity Boosting Herbal Tea - Pack Of 6 (6 X 12 G)",
+    //         price: "189",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/R33375/beyondarie-wild-smoked-tea-20-tea-pyramids50g-2-1641794312.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild Smoked Tea - 20 Tea Pyramids(50g)",
+    //         price: "124",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/H77305/herbal-hills-safed-musli-powder-100-gms-powder-2-1644933943.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Herbal Hills Safed Musli Powder - 100 Gms Powder",
+    //         price: "625",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/164721/sugar-free-gold-sweetener-tablets-strip-of-500-2-1643883518.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Sugar Free Gold Sweetener Tablets Strip Of 500",
+    //         price: "242",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C26201/jus-amazin-creamy-almond-butter-unsweetened-200g-25-protein-vegan-2-1641795448.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Jus Amazin Creamy Almond Butter - Unsweetened (200g) 25% Protein Vegan",
+    //         price: "270",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/169990/threptin-chocolate-nutrition-diskettes-tin-of-275-g-2-1643883520.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Threptin Chocolate Nutrition Diskettes Tin Of 275 G",
+    //         price: "321",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/264323/b-protin-chocolate-nutrition-supplement-bottle-of-500-g-2-1643884078.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "B-Protin Chocolate Nutrition Supplement Bottle Of 500 G",
+    //         price: "341",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1643883431.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Foods Healthy Seed Mix- Blend Of 6 Fibre Rich Healthy Seeds",
+    //         price: "191",
+    //     },
+
+    // ]
+
+    let url = "https://pharmeasy-clone.herokuapp.com/HealthFoodandDrinks";
+    async function fetchapi() {
+        try {
+            let res = await fetch(url)
+            let Health_food_drink = await res.json();
+            console.log("Health_food_drink:",Health_food_drink)
+             displayhelathfooditems(Health_food_drink)
+        }
+        catch (err) {
+            console.log("err:", err)
+        }
+    }
+    fetchapi()
+
+
+    mycartarr = JSON.parse(localStorage.getItem("CART")) || [];
+    displayhelathfooditems()
+
+    function displayhelathfooditems(Health_food_drink) {
+
+        Health_food_drink.map(function (el) {
+
+            let maindiv = document.createElement("div");
+
+            let imgdiv = document.createElement("img");
+            imgdiv.src = el.image;
+
+            let titlediv = document.createElement("p");
+            titlediv.textContent = el.title
+
+            let price = document.createElement("p");
+            price.textContent = `₹ ${el.price}`;
+
+            let btn = document.createElement("button");
+            btn.textContent = "Add Cart";
+            btn.addEventListener("click", function () {
+                addbtn(el)
+            })
+
+
+            maindiv.append(imgdiv, titlediv, price, btn);
+            document.querySelector("#container").append(maindiv);
+
+        })
+
+
+    }
+
+    function addbtn(el) {
+
+        // console.log(el);
+        mycartarr.push(el)
+        localStorage.setItem("CART", JSON.stringify(mycartarr));
+        alert("added in Cart");
+        displayhelathfooditems();
+
+    }
+
+
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

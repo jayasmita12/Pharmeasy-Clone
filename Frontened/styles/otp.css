@@ -1,0 +1,48 @@
+
+        #otg {
+            width: 350px;
+            height: 200px;
+            /* border: 1px solid red; */
+            margin: auto;
+            background-color: rgb(203, 237, 250);
+            margin-top: 50px;
+            padding: 30px;
+            margin-top: 150px;
+        }
+
+        #otg>p:nth-child(1) {
+            text-align: center;
+            color: red;
+            font-size: 18px;
+        }
+
+        #otg>p:nth-last-child(1) {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #otpinput {
+            margin: 30px 30px 0px 60px;
+        }
+
+        #otpinput>label {
+            font-size: 18px;
+        }
+
+        #otpinput>input {
+            width: 120px;
+            font-size: 18px;
+        }
+
+        #otpbutton {
+            margin: 20px 0px 0px 120px;
+            padding: 10px 30px;
+            border: 0px;
+            border-radius: 7px;
+            background-color: sandybrown;
+        }
+        button:hover{
+            cursor: pointer;
+            color: white;
+        }
+        

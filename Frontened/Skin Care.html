@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        h1 {
+            margin-left: 100px;
+            border-bottom: 1px solid rgba(187, 178, 178, .4);
+        }
+
+        #container {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #container>div {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px, 60px 20px 50px;
+            border-radius: 8px;
+        }
+
+        #container img {
+            width: 90%;
+            height: 200px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px 10px;
+            margin-left: 65px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: teal;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(13, 241, 13);
+        }
+
+        #name_div {
+            display: flex;
+        }
+
+        #name_div #cartbutton {
+            margin-left: 950px;
+            position: fixed;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbaradd"></div>
+    <div>
+        <div id="name_div">
+            <h1>Skin Care</h1>
+            <a href="./html/cart.html"><button id="skinbutton">Cart</button></a>
+        </div>
+
+        <div id="container">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    // let Skin_Care_data = [
+
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/180461/venusia-max-intensive-moisturizing-cream-for-dry-to-very-dry-skin-repairs-smoothens-skin-150g-2-1643883521.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Venusia Max Intensive Moisturizing Cream, For Dry To Very Dry Skin, Repairs & Smoothens Skin, 150g",
+    //         price: "388",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/263100/venusia-max-intensive-moisturizing-lotion-for-all-skin-types-bottle-of-300-g-2-1641398632.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Venusia Max Intensive Moisturizing Lotion, Repairs Dry Skin, Provides Soft & Smooth Skin, 300gm",
+    //         price: "409",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I48051/himalaya-neem-turmeric-soap-125gm-2-1641788188.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Himalaya Neem & Turmeric Soap 125gm",
+    //         price: "35",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I40419/venusia-max-intensive-moisturizing-lotion-repairs-dry-skin-provides-soft-smooth-skin-500gm-2-1643880644.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Venusia Max Intensive Moisturizing Lotion, Repairs Dry Skin, Provides Soft & Smooth Skin, 500gm",
+    //         price: "692",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/196230/sebamed-clear-face-foam-150ml-1-1643883591.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Sebamed Clear Face Foam - 150ml",
+    //         price: "522",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C10117/caladryl-skin-allergy-lotion-for-all-skin-types-125ml-2-1641790449.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Caladryl Skin Allergy Lotion For All Skin Types - 125ml",
+    //         price: "72",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I07034/fash-x-gel-face-wash-200gm-2-1643881499.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Fash X Gel Face Wash 200gm",
+    //         price: "356",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/F22228/abzorb-anti-fungal-soap-wrap-of-100-g-1-1643882146.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Abzorb Anti Fungal Soap Wrap Of 100 G",
+    //         price: "111",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/054560/dettol-original-germ-protection-bathing-soap-bar-125g-2-1643884295.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Dettol Original Germ Protection Bathing Soap Bar - 125g",
+    //         price: "63",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/265998/tetmosol-medicated-soap-for-relief-from-skin-infections-lime-fragrance-100g-2-1643883029.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Tetmosol Medicated Soap For Relief From Skin Infections - Lime Fragrance - 100g",
+    //         price: "73",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/215441/episoft-cleansing-lotion-125ml-1-1643884058.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Episoft Cleansing Lotion 125ml",
+    //         price: "264",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I01439/episoft-ac-sunscreen-spf30-lotion-75gm-1-1643882658.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Episoft Ac Sunscreen Spf30 Lotion 75gm",
+    //         price: "431",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/R85254/dettol-intense-cool-bathing-soap-bar-with-menthol-buy-4-get-1-free-125g-each-2-1641788763.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Dettol Intense Cool Bathing Soap Bar With Menthol- Buy 4 Get 1 Free - 125g Each",
+    //         price: "234",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/242434/venusia-moisturizing-lotion-non-comedogenic-bottle-of-200-ml-2-1643883128.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Venusia Moisturizing Lotion (Non-Comedogenic) Bottle Of 200 Ml",
+    //         price: "419",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I41689/nivea-soft-light-moisturizer-bottle-of-25-ml-2-1641788147.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Nivea Soft Light Moisturizer Bottle Of 25 Ml",
+    //         price: "46",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/273329/episoft-cleansing-lotion-250ml-2-1641398639.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Episoft Cleansing Lotion 250ml",
+    //         price: "407",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C84012/lite-glo-face-wash-tube-of-100-ml-2-1643880030.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Lite Glo Face Wash Tube Of 100 Ml",
+    //         price: "340",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I33842/neko-daily-hygiene-soap-24-hours-germ-protection-100g-pack-of-1--1-1641787982.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Neko Daily Hygiene Soap 24 Hours Germ Protection - 100g ( Pack Of 1 )",
+    //         price: "53",
+    //     },
+
+    // ]
+
+    let url = "https://pharmeasy-clone.herokuapp.com/skincares";
+    async function fetchapi() {
+        try {
+            let res = await fetch(url)
+            let skincares_data = await res.json();
+            console.log("skincares_data:",skincares_data)
+            displayskincareitems(skincares_data)
+        }
+        catch (err) {
+            console.log("err:", err)
+        }
+    }
+    fetchapi()
+
+    // Skin_Care_data.map(function (el) {
+
+    //     let maindiv = document.createElement("div");
+
+    //     let imgdiv = document.createElement("img");
+    //     imgdiv.src = el.image;
+
+    //     let titlediv = document.createElement("p");
+    //     titlediv.textContent = el.title
+
+    //     let price = document.createElement("p");
+    //     price.textContent = `₹ ${el.price}`;
+
+    //     let btn = document.createElement("button");
+    //     btn.textContent = "Add Cart"
+
+    //     maindiv.append(imgdiv, titlediv, price, btn);
+    //     document.querySelector("#container").append(maindiv);
+
+    // })
+     
+    
+
+    let mycartarr = JSON.parse(localStorage.getItem("CART")) || [];
+    //  let mycartarr = [];
+    displayskincareitems()
+
+
+    function displayskincareitems(skincares_data) {
+        // let mycartarr = []
+        // document.querySelector("#container").innerHTML = null;
+
+
+        skincares_data.map(function (el) {
+
+            let maindiv = document.createElement("div");
+
+            let imgdiv = document.createElement("img");
+            imgdiv.src = el.image;
+
+            let titlediv = document.createElement("p");
+            titlediv.textContent = el.title
+
+            let price = document.createElement("p");
+            // price.textContent = `₹ ${el.dis}`;
+            price.textContent = `₹ ${el.price}`;
+
+
+            let btn = document.createElement("button");
+            btn.textContent = "Add Cart";
+            btn.addEventListener("click", function () {
+                addbtn(el)
+            })
+
+            maindiv.append(imgdiv, titlediv, price, btn);
+            document.querySelector("#container").append(maindiv);
+
+        })
+
+
+
+    }
+
+    function addbtn(el) {
+
+        mycartarr.push(el)
+        // console.log("this is the ammount------>",el);
+        // console.log(typeof el.price)
+        localStorage.setItem("CART", JSON.stringify(mycartarr));
+        alert("added in Cart");
+        displayskincareitems();
+
+    }
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

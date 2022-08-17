@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        h1 {
+            /* margin-left: 100px; */
+            border-bottom: 1px solid rgba(187, 178, 178, .4);
+        }
+
+        #container {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #container>div {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px, 60px 20px 50px;
+            border-radius: 8px;
+        }
+
+        #container img {
+            width: 90%;
+            height: 200px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px 10px;
+            margin-left: 65px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: teal;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(13, 241, 13);
+        }
+        #name_div{
+            display: flex;
+        }
+        #name_div #cartbutton{
+            margin-left: 970px;
+            position: fixed;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbaradd">
+
+    </div>
+    <div id="name_div">
+        <h1>Covid Essentials</h1>
+        <a href="./cart.html"><button id="cartbutton">Cart</button></a>        
+    </div>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
+<script>
+    // Covid_Essentials_data = [
+
+    //     {
+    //         image: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI40695%2Fdettol-antiseptic-liquid-bottle-of-550-ml-2-1643880193.jpg&w=256&q=75",
+    //         title: "Dettol Antiseptic Liquid Bottle Of 550 Ml",
+    //         price: "190",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/266249/depura-60000-iu-vitamin-d3-oral-solution-helps-bones-healthy-aids-in-boosting-immunity-sugarfree-1-1643882938.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Depura, 60000 Iu Vitamin D3 Oral Solution,Helps Bones Healthy, Aids In Boosting Immunity, Sugarfree",
+    //         price: "66",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-1-1643883399.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Becozym C Forte ( Vitamin B Complex + Biotin + Vitamin C )- Strip Of 15 Tablets",
+    //         price: "23",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/O26428/savlon-surface-disinfectant-spray-170g-2-1643879783.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Savlon Surface Disinfectant Spray 170g",
+    //         price: "140",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I01462/seacod-110-cod-liver-oil-capsules-bottle-of-110-1-1632774258.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Seacod 110 Cod Liver Oil Capsules Bottle Of 110",
+    //         price: "264",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/E79162/liveasy-wellness-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1643882225.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Wellness Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+    //         price: "350",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/181140/vicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1643883635.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Vicks Vaporub 50ml, Relief From Cold, Cough, Headache And Body Pain",
+    //         price: "108",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/022610/benadon-vitamin-b6-40mg-tablet-10s-2-1641398894.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Benadon Vitamin B6 40mg Tablet 10'S",
+    //         price: "24",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I04110/cofsils-orange-lozenges-strip-of-10-2-1641398981.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Cofsils Orange Lozenges Strip Of 10",
+    //         price: "28",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/I00596/revital-h-woman-health-supplement-tablets-bottle-of-30-1-1643882179.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Revital H Woman Health Supplement Tablets Bottle Of 30",
+    //         price: "246",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/N27936/kofol-chewable-tablets-sugar-free-jar-of-60-2-1643879869.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Kofol Chewable Tablets Sugar Free Jar Of 60",
+    //         price: "32",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/F22184/ourdaily-vitamin-c-500mg-zinc-chewable-tablets-builds-immunity-lemony-orange-15-tablets-1-1643882144.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Ourdaily Vitamin C ( 500mg ) & Zinc Chewable Tablets-Builds Immunity - Lemony Orange- 15 Tablets",
+    //         price: "47",
+    //     },
+
+    // ]
+
+    let url = "https://pharmeasy-clone.herokuapp.com/covids";
+    async function fetchapi() {
+        try {
+            let res = await fetch(url)
+            let covid_essentials = await res.json();
+            console.log("covid_essentials:",covid_essentials)
+            displaycoviditems(covid_essentials)
+        }
+        catch (err) {
+            console.log("err:", err)
+        }
+    }
+    fetchapi()
+
+    mycartarr = JSON.parse(localStorage.getItem("CART")) ||  [];
+    // mycartarr = [];
+    displaycoviditems()
+
+
+    function displaycoviditems(covid_essentials) {
+
+        covid_essentials.map(function (el) {
+
+            let maindiv = document.createElement("div");
+
+            let imgdiv = document.createElement("img");
+            imgdiv.src = el.image;
+
+            let titlediv = document.createElement("p");
+            titlediv.textContent = el.title
+
+            let price = document.createElement("p");
+            price.textContent = `₹ ${el.price}`;
+
+            let btn = document.createElement("button");
+            btn.textContent = "Add Cart";
+            btn.addEventListener("click", function () {
+                addbtn(el)
+            })
+
+            maindiv.append(imgdiv, titlediv, price, btn);
+            document.querySelector("#container").append(maindiv);
+
+        })
+
+
+
+    }
+
+    function addbtn(el){
+
+        // console.log(el);
+        //  console.log(typeof el.price)
+        mycartarr.push(el)
+        localStorage.setItem("CART", JSON.stringify(mycartarr));
+        alert("added in Cart");
+        displaycoviditems();
+
+    }
+
+
+</script>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

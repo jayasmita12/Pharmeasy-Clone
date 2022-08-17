@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy</title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <link rel="stylesheet" href="../styles/signin.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <!-- <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script> -->
+   
+</head>
+<body>
+    <!-- <div id="navbaradd"></div> -->
+    <div id="container">
+        
+         <header class='errorBox'>
+            <div class="error">
+                <p>
+                    <i class='fas fa-exclamation-triangle' style='font-size:25px;color:#c40000'></i>
+                </p>
+
+                <span>
+                    <h4>There was a problem</h4>
+                    <ul class='errorList'>
+                        <li class='emailErr'>Enter your email</li>
+                        <li class='passErr'>Enter your password</li>
+                        <li class='wrongCredentials'>Wrong Credentials</li>
+                    </ul>
+                </span>
+            </div>  
+        </header>
+
+
+        <!-- Signin Box -->
+        <div class="signInBox">
+            <h1>Sign-In</h1>
+
+            <div class="input email">
+                <label for="email" class='inputText'>Email or mobile phone number</label>
+                <input type="text" name="email" class='data' id="email">
+            </div>
+
+            <div class="input password">
+                <div class="passLabel">
+                    <label for="password" class='inputText'>Password</label>
+                    <label for="forgetPass"><a href="#" class='forgetPass'>Forgot your password?</a></label>
+                </div>
+                <input type="password" name="password" class='data' id="password">
+            </div>
+
+            <div class="btn">
+                <!-- <button type='submit' class='signInBtn loginBtn' onclick="homePage()">Sign-In</button> -->
+                <button type='submit' class='signInBtn ' onclick="login()">Sign-In</button>
+            </div>
+
+            <div class="terms">
+                <p>
+                    <!-- By continuing, you agree to Amazon's  -->
+                    <!-- <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions of Use</a> -->
+                    and
+                    <!-- <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice.</a> -->
+                </p>
+            </div>
+
+            <div class="keepSignIn">
+                <input type="checkbox">
+                <label for="checkbox">Keep me signed in. </label> 
+                <a href="">Details</a><i class="fas fa-caret-down"></i>
+            </div>
+
+            <div class="newToAmazon">
+                <h5 class='noSpan'>New to pharmEasy?</h5>
+
+            </div>
+
+            <div class="signupPage">
+                <button type='submit'  onclick="signupPage()">Create your PharmEasy account</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="terms">
+                <p><a href="#">Conditions of Use</a></p>
+                <p><a href="#">Privacy Notes</a></p>
+                <p><a href="#">Help</a></p>
+            </div>
+            <div class="copyright">
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/signin.js"></script>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "../scripts/navbar.js";
+    let navbar_div = document.querySelector("#navbaradd")
+    navbar_div.innerHTML = navbar();
+
+</script>

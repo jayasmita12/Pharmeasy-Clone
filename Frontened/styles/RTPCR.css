@@ -1,0 +1,106 @@
+ #container {
+        width: 1024px;
+        height:656.42px;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    #box1 {
+        width: 592px;
+        height: 656.42px;
+        /* border: 1px solid red; */
+    }
+    #test {
+        width: 592px;
+        height: 32.5px;
+        /* border: 1px solid black; */
+        
+        
+    }
+    #covid {
+        width: 592px;
+        height: 266.58px;
+        border: 1px solid grey;
+        display: flex;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+    #cov {
+        height: 100%;
+        width: 10%;
+    }
+    #cov1 {
+        height: 100%;
+        width: 90%;
+    }
+    h1 {
+        
+        font-size:30px ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #rtpcrselect         {
+        width: 200px;
+        height: 50px;
+        background-color: teal;
+        color: white;
+        border-radius: 5px;
+    }
+    #box2{
+        margin-top: 30px;
+    }
+    .viewbtn{
+        width:100%; 
+        height: 50px;
+        background-color:rgb(156, 154, 154); 
+        color: white; 
+        border: none;
+        border-radius: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        font-weight: bold;
+    }
+    #blue {
+        width: 592px;
+        height: 92.33px;
+        /* border: 1px solid blue; */
+    }
+    #description {
+        width: 592px;
+        height: 220px;
+        /* border: 1px solid grey; */
+    }
+    #box2 {
+        width: 352px;
+        height: 656.42px;
+        /* border: 1px solid rgb(83, 83, 55); */
+             
+    }
+    #cont {
+        width: 100%;
+        height: 276.97px;
+        /* border: 1px solid grey; */
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    #bar {
+        width: 251.38px;
+        height: 276.96px;
+        /* border: 1px solid black; */
+    }
+    #pic {
+        width: 75px;
+        height: 94px;
+        /* border: 1px solid teal; */
+    }
+    #tex {
+        width: 213.25px;
+        height: 45px;
+        /* border: 1px solid black;  */
+    }
+    #para {
+        width: 241px;
+        height: 112.38px;
+        /* border: 1px solid black; */
+        
+    }

@@ -1,0 +1,211 @@
+body {
+  margin: 0px;
+  padding: 30px 80px;
+}
+#container{
+  padding: 40px 80px;
+  margin: auto;
+}
+
+#container > P:nth-child(1) {
+  font-size: 13px;
+}
+
+#container > P > a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+
+#container > P > span {
+  color: gray;
+  margin-left: 15px;
+}
+
+#line1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#line1left {
+  width: 550px;
+  height: 200px;
+  background-color: teal;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#line1left > div {
+  display: flex;
+  color: white;
+}
+
+#line1left > div > p > img {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: white;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+#line1h3 {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* #searchbar {
+            width: 400px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: pink;
+        } */
+/* #searchbar input {
+            width: 800px;
+            height: 30px;
+        }
+        #raju {
+            width: 400px;
+            height: 30px;
+        } */
+input {
+  width: 500px;
+  height: 45px;
+  border-radius: 8px;
+  outline: 0px;
+  border: 0px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+#line1right > #box1,
+#box2 {
+  width: 350px;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+#line1right > #box1,
+#box2 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px;
+}
+
+#line1right > #box1 img {
+  width: 30px;
+  height: 30px;
+}
+
+#line1right > #box2 img {
+  width: 30px;
+  height: 30px;
+}
+
+#line1right > #box2 > p > img:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* #line1right>#box1>p>img:nth-child(2) {
+            margin-left: 120px;                                         // why this is not working
+        } */
+
+.para,
+li {
+  line-height: 25px;
+  font-size: 17px;
+  text-align: justify;
+  color: rgb(161, 153, 153);
+}
+
+.para > h3 {
+  color: rgb(75, 62, 62);
+}
+
+.para span {
+  color: rgb(153, 150, 150);
+  font-weight: 700;
+}
+.box {
+  width: 1000px;
+  height: auto;
+  border: 1px solid rgb(179, 172, 172);
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+#imgtext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#imgtext > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.box img {
+  width: 20px;
+  height: 20px;
+}
+#imgtext > div > img + p {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(102, 100, 100);
+}
+#detailstext {
+  margin-top: -20px;
+}
+
+/* -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  /* background: #eee; */
+  width: 78%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  /* background: #8c8; */
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+#box1 h3{
+  margin-top: 17px;
+}
+#box2 h3{
+  margin-top: 17px;
+}

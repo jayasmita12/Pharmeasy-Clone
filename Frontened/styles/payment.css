@@ -1,0 +1,57 @@
+#container > div {
+  border: 1px solid red;
+  width: 800px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+#pay {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  padding: 20px 30px;
+  border-bottom: hidden;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  margin: auto;
+  gap:80px
+}
+.box > img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: -20px;
+}
+.box:hover {
+  cursor: pointer;
+}
+
+#pay > div {
+  height:200px;
+  text-align: center;
+  border-radius: 7px;
+}
+#pay > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#paybox{
+  text-align: center;
+  margin-top: -50px;
+}
+#continuebtn {
+
+  width: 140px;
+  height: 25px;
+  padding: 10px 15px 30px 15px;
+  font-size: 17px;
+  background-color: #37857e;
+  border: 0px;
+  border-radius: 7px;
+  color:black;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #609b95;
+  color: white;
+  font-weight: 500;
+}
